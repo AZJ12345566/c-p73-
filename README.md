@@ -106,7 +106,7 @@ int main()
       FILE* pf=fopen("test.txt","r");
       if(pf==NULL)
           return 0;
-      int ch-fgetc(pf);
+      int ch=fgetc(pf);
       printf("%d\n",ch);//-1
       fclose(pf);
       pf=NULL;
@@ -123,7 +123,7 @@ int main()
       FILE* pf=fopen("test2.txt","r");
       if(pf=NULL)
       {
-            perror("hehe");//输出结果为hehe：No such。。。，基本可以替代strerror函数，不需要音头文件
+            perror("hehe");//输出结果为hehe：No such。。。，基本可以替代strerror函数，不需要引头文件
             return 0;
       }
       //读文件
@@ -138,7 +138,7 @@ int main()
       FILE* pf=fopen("test.txt","r");
       if(pf==NULL)
       {
-            perror("hehe");//输出结果为hehe：No such。。。，基本可以替代strerror函数，不需要音头文件
+            perror("hehe");//输出结果为hehe：No such。。。，基本可以替代strerror函数，不需要引头文件
             return 0;
       }
       //读文件
